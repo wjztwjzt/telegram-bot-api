@@ -1,0 +1,12 @@
+[Unit]
+Description=Telegram Bot API Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/telegram-bot-api --api-id=YOUR_API_ID --api-hash=YOUR_API_HASH --local --dir=/var/lib/telegram-bot-api --http-port=8082 --log=/var/log/telegram-bot-api.log --verbosity=2
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
