@@ -1,5 +1,7 @@
 # Telegram Bot API Server 一键部署
 
+采用的官方api的文件，自行本地编译版本，并配置相应参数和service文件保活。
+
 自建 [Telegram Bot API](https://github.com/tdlib/telegram-bot-api) 服务端，支持 Local Bot API 模式（突破官方 API 的 20MB 下载 / 50MB 上传限制）。
 
 本仓库结构：
